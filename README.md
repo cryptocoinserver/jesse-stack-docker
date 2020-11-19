@@ -8,24 +8,32 @@ Quick start for jesse, all you need is install [docker  compose](https://docs.do
 docker-compose run jesse bash
 ```
 
-## 2. Into Jesse container, upgrade Jesse pkg to the latest version:
+## 2. Connect to the CLI of the Jesse container
+
+
+## 3. Upgrade Jesse pkg to the latest version:
 ```sh
 pip install -U jesse
 ```
 
-## 3. Into Jesse container, navigate to the project root directory:
+## 4. Jesse container - Create your project:
 ```sh
-cd /home/myBot
+jesse make-project name-of-project
 ```
 
-## 4. Into Jesse container, Import the candle history:
+## 5. Jesse container - Navigate to the project root directory:
 ```sh
-jesse import-candles Binance BTCUSDT 2020-06-01
+cd /home/name-of-project
 ```
 
-## You're good to go! into Jesse container, run a backtest:
+## 6. Jesse container - Import the candle history:
 ```sh
-jesse backtest 2019-11-01 2020-11-01 --chart
+jesse import-candles Binance BTCUSDT 2019-01-01
+```
+
+## You're good to go! Run a backtest:
+```sh
+jesse backtest 2019-06-01 2020-01-01 --chart
 ```
 
 Web interface for backtesting result chart: `http://localhost:3000`

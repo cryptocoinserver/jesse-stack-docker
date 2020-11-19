@@ -8,8 +8,14 @@ Quick start for jesse, all you need is install [docker  compose](https://docs.do
 docker-compose run jesse bash
 ```
 
-## 2. Connect to the CLI of the Jesse container
-
+## 2. Connect to the CLI of the Jesse container using the container’s ID or name:
+```sh
+docker attach jesse-stack-docker_jesse
+```
+### Your container name might differ. This will list running containers:
+```sh
+docker container ls
+```
 
 ## 3. Upgrade Jesse pkg to the latest version:
 ```sh

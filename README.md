@@ -3,7 +3,7 @@
 Quick start for jesse, all you need is install [docker  compose](https://docs.docker.com/compose), clone this repo.
 
 
-## 1. Start Jesse container:
+## 1. Start up all needed containers:
 ```sh
 docker-compose run jesse bash
 ```
